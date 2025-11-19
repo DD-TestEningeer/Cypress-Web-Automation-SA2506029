@@ -1,5 +1,5 @@
 
-require('cypress-xpath');
+
 
 describe('2) Xpath Locators', ()=>{
 

@@ -1,3 +1,8 @@
+Cypress.Screenshot.defaults({
+  screenshotOnRunFailure: true,
+})
+
+
 describe("Login Test Suite", () => {
   it("Open login page", () => {
     cy.visit("https://dd-demo-tau.vercel.app/login.html");
@@ -11,7 +16,10 @@ describe("Login Test Suite", () => {
       cy.visit("https://dd-demo-tau.vercel.app/login.html");
 
     // step 2 - enter the username 
-    cy.get('#username').type('demo user');
+
+    cy.get('#username').should('have.text', 'demo')
+
+    // cy.get('#username').type('demo user');
 
 
     // step 3 - enter the password
