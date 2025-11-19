@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-11-19T17:36:23.067Z",
+    "end": "2025-11-19T17:36:26.503Z",
+    "duration": 3436,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2ab47bb3-a1b5-4cfb-9d02-057c36513578",
+      "title": "",
+      "fullFile": "cypress\\e2e\\25_screenshot.cy.js",
+      "file": "cypress\\e2e\\25_screenshot.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7e2a4411-69d5-4e52-81d5-ab99e8689083",
+          "title": "Screenshot Demo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test 1: Capture the Screenshots Manually",
+              "fullTitle": "Screenshot Demo Test 1: Capture the Screenshots Manually",
+              "timedOut": null,
+              "duration": 984,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// open the url \ncy.visit('https://dd-demo-tau.vercel.app/login.html');\n// full page screenshot\ncy.screenshot('Login_Page');\n// area specific screenshot\ncy.xpath('//form[@method=\"post\"]').screenshot('Login_Form');\n// element specific screenshot\ncy.xpath('//button[@onclick=\"submitForm()\"]').screenshot('Login Button Screenshot');",
+              "err": {},
+              "uuid": "807a1b65-b7d8-4957-89a8-42c994fcd1ba",
+              "parentUUID": "7e2a4411-69d5-4e52-81d5-ab99e8689083",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "807a1b65-b7d8-4957-89a8-42c994fcd1ba"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 984,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

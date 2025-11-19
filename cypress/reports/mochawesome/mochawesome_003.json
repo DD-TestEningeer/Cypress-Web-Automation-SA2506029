@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-11-19T17:33:46.717Z",
+    "end": "2025-11-19T17:33:53.463Z",
+    "duration": 6746,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3457c67f-ba54-48c4-8438-464c3f09cd07",
+      "title": "",
+      "fullFile": "cypress\\e2e\\13_basic_assertions.cy.js",
+      "file": "cypress\\e2e\\13_basic_assertions.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "efa0e874-a143-48cc-8c1d-c3a706fe4a82",
+          "title": "Login Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify user login scenario",
+              "fullTitle": "Login Test Suite Verify user login scenario",
+              "timedOut": null,
+              "duration": 4323,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// step 1 - page navigation \ncy.visit(\"https://dd-demo-tau.vercel.app/login.html\");\n// step 2 - enter the username \n//   cy.get('#username').should('be.visible')\ncy.get('#username').should('not.be.visible');\n//   cy.get('#username').should('be.checked')\ncy.get('#username').should('have.text', \"SampleText\");\ncy.get('#username').type('demo user');\n// step 3 - enter the password\ncy.get('#password').type('Test@1234');\n// step 4 - click on the login button \ncy.contains('Login').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<input#username>' not to be 'visible'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<input#username>' not to be 'visible'\n    at Context.eval (webpack://cypress-training/./cypress/e2e/13_basic_assertions.cy.js:12:28)",
+                "diff": null
+              },
+              "uuid": "1c460a5f-0abf-4147-ae0f-35e018afb3f8",
+              "parentUUID": "efa0e874-a143-48cc-8c1d-c3a706fe4a82",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "1c460a5f-0abf-4147-ae0f-35e018afb3f8"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4323,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

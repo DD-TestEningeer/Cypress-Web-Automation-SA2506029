@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-11-19T17:36:12.365Z",
+    "end": "2025-11-19T17:36:18.949Z",
+    "duration": 6584,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "42197129-48d8-43ea-a865-78ea9ec4b7ac",
+      "title": "",
+      "fullFile": "cypress\\e2e\\24_file_upload.cy.js",
+      "file": "cypress\\e2e\\24_file_upload.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d4beeef7-3764-40e7-b2aa-8b25ccbd9249",
+          "title": "File Upload Demo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify the file upload test",
+              "fullTitle": "File Upload Demo Verify the file upload test",
+              "timedOut": null,
+              "duration": 2599,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// visit the url \ncy.visit('https://the-internet.herokuapp.com/upload');\n// find the upload button and send the file \ncy.get('#file-upload').attachFile('testData.txt');\n// click on the upload button \ncy.get('#file-submit').click();\n// Verify that the file is uploaded successfully \ncy.get('h3').should('have.text', 'File Uploaded!');",
+              "err": {},
+              "uuid": "78a78455-50b0-467c-9817-2b0b67f2636a",
+              "parentUUID": "d4beeef7-3764-40e7-b2aa-8b25ccbd9249",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "78a78455-50b0-467c-9817-2b0b67f2636a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2599,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-11-19T17:36:30.546Z",
+    "end": "2025-11-19T17:36:37.633Z",
+    "duration": 7087,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "39a1fb1f-e1b4-49f2-b8e5-16cd14b5de38",
+      "title": "",
+      "fullFile": "cypress\\e2e\\2_login.cy.js",
+      "file": "cypress\\e2e\\2_login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "61050d94-ae31-41ed-999d-4ee9d5e9f036",
+          "title": "Login Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Open login page",
+              "fullTitle": "Login Test Suite Open login page",
+              "timedOut": null,
+              "duration": 167,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://dd-demo-tau.vercel.app/login.html\");",
+              "err": {},
+              "uuid": "2421fa92-577f-4c49-8b04-ab1438b5b691",
+              "parentUUID": "61050d94-ae31-41ed-999d-4ee9d5e9f036",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify user login scenario",
+              "fullTitle": "Login Test Suite Verify user login scenario",
+              "timedOut": null,
+              "duration": 4280,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// step 1 - page navigation \ncy.visit(\"https://dd-demo-tau.vercel.app/login.html\");\n// step 2 - enter the username \ncy.get('#username').should('have.text', 'demo');\n// cy.get('#username').type('demo user');\n// step 3 - enter the password\ncy.get('#password').type('Test@1234');\n// step 4 - click on the login button \ncy.contains('Login').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<input#username>' to have text 'demo', but the text was ''",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<input#username>' to have text 'demo', but the text was ''\n    at Context.eval (webpack://cypress-training/./cypress/e2e/2_login.cy.js:20:24)",
+                "diff": "+ 'demo'\n"
+              },
+              "uuid": "f21f9244-3353-4111-a193-9b14025b0321",
+              "parentUUID": "61050d94-ae31-41ed-999d-4ee9d5e9f036",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2421fa92-577f-4c49-8b04-ab1438b5b691"
+          ],
+          "failures": [
+            "f21f9244-3353-4111-a193-9b14025b0321"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4447,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

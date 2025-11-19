@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-11-19T17:34:09.824Z",
+    "end": "2025-11-19T17:34:13.115Z",
+    "duration": 3291,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d26a2c72-afd9-44b4-87b3-bfab41987d73",
+      "title": "",
+      "fullFile": "cypress\\e2e\\15_implicit_assertion.cy.js",
+      "file": "cypress\\e2e\\15_implicit_assertion.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6cd60717-4872-461e-a169-36b106e99855",
+          "title": "Implicit Assertions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Use of implicit assertions",
+              "fullTitle": "Implicit Assertions Use of implicit assertions",
+              "timedOut": null,
+              "duration": 911,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Open url\ncy.visit(\"https://dd-demo-tau.vercel.app/login.html\");\n// Login page header validation/assertion\ncy.xpath('//h1[text()=\"Login Page\"]').should(\"have.text\", \"Login Page\"); // Expected Text => Login Page\n//  cy.xpath('//h1[text()=\"Login Page\"]').should('be.visible'); // visibility check\n// Enter Username field \ncy.get('#username').should('be.visible').and('be.enabled').type('Demo User');\n// Enter Password field\ncy.xpath('//form[@method=\"post\"]').find('#password').should('be.visible').type('Test@456');\n// Click on the Login button \ncy.get('button').contains('Login').should('be.enabled').click();",
+              "err": {},
+              "uuid": "1248964f-cb52-45fa-8ac0-8077ce426abc",
+              "parentUUID": "6cd60717-4872-461e-a169-36b106e99855",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1248964f-cb52-45fa-8ac0-8077ce426abc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 911,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-11-19T17:35:14.317Z",
+    "end": "2025-11-19T17:35:30.050Z",
+    "duration": 15733,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "df25dfe0-5ee9-43c3-bc9b-efd0175051c0",
+      "title": "",
+      "fullFile": "cypress\\e2e\\21_dropdown.cy.js",
+      "file": "cypress\\e2e\\21_dropdown.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8cdbb94d-25c7-4691-ac0d-022f06125819",
+          "title": "Dropdown Interactions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify the dropdown selections ",
+              "fullTitle": "Dropdown Interactions Verify the dropdown selections ",
+              "timedOut": null,
+              "duration": 13167,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// open url\ncy.visit('https://dd-demo-tau.vercel.app/web_elements.html');\n// click on dropdown button option\ncy.contains('7. Dropdown').click();\ncy.wait(3000);\n// select the values from dropdown \n// using visible text\ncy.get('#dropdownField').select('BMW');\ncy.wait(3000);\n// using value\ncy.get('#dropdownField').select('Audi');\ncy.wait(3000);\n// using index\ncy.get('#dropdownField').select(3);\ncy.wait(3000);",
+              "err": {},
+              "uuid": "f268eb6f-2b63-4bbd-84ca-2c719068be0d",
+              "parentUUID": "8cdbb94d-25c7-4691-ac0d-022f06125819",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f268eb6f-2b63-4bbd-84ca-2c719068be0d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13167,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

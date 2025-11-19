@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-11-19T17:36:49.780Z",
+    "end": "2025-11-19T17:36:52.479Z",
+    "duration": 2699,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1bc4dd57-37eb-4b25-aae7-1848ea61a44d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\4_page_title.cy.js",
+      "file": "cypress\\e2e\\4_page_title.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "20ba971b-0a5b-4594-af5f-56483da6b4a8",
+          "title": "Page Title Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Case 1- Home page title check",
+              "fullTitle": "Page Title Test Suite Test Case 1- Home page title check",
+              "timedOut": null,
+              "duration": 174,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// step 1- Home page navigation \ncy.visit('https://dd-demo-tau.vercel.app/');\n// step 2 - Validate for the home page title check \n// Expected Title - \"Software Testing By DD\"\ncy.title().should('includes', 'Software Testing By DD');",
+              "err": {},
+              "uuid": "8f9a44c7-9fdd-42c3-a71a-cade67473aea",
+              "parentUUID": "20ba971b-0a5b-4594-af5f-56483da6b4a8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Case 2 - Register page title check",
+              "fullTitle": "Page Title Test Suite Test Case 2 - Register page title check",
+              "timedOut": null,
+              "duration": 151,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// step 1- Register page navigation \ncy.visit('https://dd-demo-tau.vercel.app/register.html');\n// step 2 - Validate for the register page title check \n// Expected Title - \"Register Demo\"\ncy.title().should('includes', 'Register Demo');",
+              "err": {},
+              "uuid": "4d1163d6-d299-49aa-8ecc-dc093a593708",
+              "parentUUID": "20ba971b-0a5b-4594-af5f-56483da6b4a8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Case 3 - Login page title check",
+              "fullTitle": "Page Title Test Suite Test Case 3 - Login page title check",
+              "timedOut": null,
+              "duration": 193,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// step 1- Login page navigation \ncy.visit('https://dd-demo-tau.vercel.app/login.html');\n// step 2 - Validate for the login page title check \n// Expected Title - \"Login Page\"\ncy.title().should('includes', 'Login Page');",
+              "err": {},
+              "uuid": "e0cb2877-2b2f-4f0d-8e4e-b1e5ccc857f2",
+              "parentUUID": "20ba971b-0a5b-4594-af5f-56483da6b4a8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8f9a44c7-9fdd-42c3-a71a-cade67473aea",
+            "4d1163d6-d299-49aa-8ecc-dc093a593708",
+            "e0cb2877-2b2f-4f0d-8e4e-b1e5ccc857f2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 518,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}
